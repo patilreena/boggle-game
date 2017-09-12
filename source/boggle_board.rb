@@ -3,9 +3,12 @@ class BoggleBoard
     #how do we describe it
     #creating an array of 16 underscores
     @spaces = Array.new(16, "_")
+    @alphabet = (A..Z).to_a
   end
 #what does it do
   def shake!
+    # @spaces.map { |x| x == _ ? 'A..Z' : x}
+    @spaces.map! { |x| x == _ ? @alphabet : x }.flatten!
   end
 
   # Defining to_s on an object controls how the object is
@@ -19,7 +22,7 @@ class BoggleBoard
     4.times do
        output_string << letter_array.shift(4).join('') + "\n"
     end
-    
+
     output_string
 
   end
