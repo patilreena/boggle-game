@@ -21,6 +21,7 @@
 #     # output_string = String.new
 #     # letter_array = @spaces
 #     #
+#     #
 #     # 4.times do
 #     #   output_string << letter_array.shift(4).join('') + "\n"
 #     # end
