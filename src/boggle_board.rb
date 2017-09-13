@@ -34,7 +34,7 @@
 # puts board.shake!
 
 
-
+#Define a class called Board
 class Board
   def initialize(state)
     @xmax = state.size
