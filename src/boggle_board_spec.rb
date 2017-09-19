@@ -2,7 +2,6 @@ require_relative 'boggle_board'
 
 describe "Boggle Board - Release 0" do
 
-
   let(:board) { BoggleBoard.new }
 
   it "can be shaken" do
